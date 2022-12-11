@@ -1,0 +1,54 @@
+@import './font-awesome.css';
+@import './fonts.css';
+
+/* 텍스토로고 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Raleway:wght@700&display=swap');
+
+/* 레이아웃 */
+* { margin: 0; padding: 0; }
+#wrap {  width: 100%; margin: 0 auto; text-align: center; line-height: 1.6; letter-spacing: 0.5;}
+#header { width: 100%; text-align: center; background-color: #5a80d1; border-bottom-right-radius: 25px; border-bottom-left-radius: 25px;}
+#header_bg { background-color: #dbdbdb;}
+#content { width: 100%; text-align: center; }
+#footer { border-top: 1px solid #dbdbdb;}
+.container { max-width: 1100px; margin: 0 auto; background-color: #fff; }
+
+/* 리셋 */
+h1, h2, h3, h4, h5, h6, button, a, input, table { font-size: 14px; color: 000; text-decoration: none; font-family:'Noto Sans KR', sans-serif;}
+button { background: none; outline: none; border: none; cursor: pointer;}
+ul { list-style: none; }
+address { background-color: #fff;}
+a { text-decoration: none; color: #000;}
+a:active { text-decoration: none; color: #000;}
+
+/* header */
+.header { background-color: #5a80d1; }
+.header .header_tit h1 { font-size: 30px; padding: 50px 0 25px 0; font-family: 'Raleway', sans-serif; color: #FFF;}
+.header_menu .menu_bar ul { display: flex; justify-content: center; }
+.header_menu .menu_bar ul li { padding: 0 54px 18px 54px;}
+.header_menu .menu_bar ul li a { color: #fff; transition: 0.5s;}
+.header_menu .menu_bar ul li a:hover { color: #dbdbdb; text-shadow: 2px 2px 1px black;}
+
+/* contents */
+
+.content .cont_list1 ul { display: flex; justify-content: center; flex-wrap: wrap; padding: 54px 0 36px 0;}
+.content .cont_list1 ul li { position: relative; } 
+.content .cont_list1 ul li:first-child { padding-right: 36px;} 
+
+.content .cont_list1 ul li a img { width: 480px; height: 480px; border-radius: 5px;}
+.content .cont_list1 ul li a .bg_info { width: 480px; height: 160px; background-color: #dbdbdb; border-radius: 5px; position: absolute; bottom: 8px; left: 0; opacity: 0; transition: 0.5s;}
+.content .cont_list1 ul li a:hover .bg_info { opacity: 0.9;}
+.content .cont_list1 ul li a:hover .bg_info p { color: #000; }
+.content .cont_list1 ul li a .bg_info p { padding-top: 28px; line-height: 2;}
+
+
+.content .cont_list2 ul { display: flex; justify-content: center; flex-wrap: wrap;}
+.content .cont_list2 ul li { padding-bottom: 12px;}
+.content .cont_list2 ul li:nth-child(2) { padding: 0 24px;}
+.content .cont_list2 ul li:nth-child(5) { padding: 0 24px;}
+.content .cont_list2 ul li a {}
+.content .cont_list2 ul li a img { width: 320px; height: 320px; border-radius: 5px;}
+
+/* footer */
+.footer { }
+.footer address { display: block; height: 100px; line-height: 6.6;}
